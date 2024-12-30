@@ -23,7 +23,8 @@ app.get('/users', (req, res) => {
 
 // This route add a new user
 app.post('/users', (req, res) => {
-    users.push(req.body); // Add a new user from the request body to the users array
+    const { name, prenom } = req.body;
+    users.push({ name, prenom }); // Add a new user from the request body to the users array
     res.status(200).send('User has been created!'); // Respond with a success message
 });
 
