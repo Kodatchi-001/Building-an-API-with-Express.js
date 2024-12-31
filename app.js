@@ -1,4 +1,4 @@
-// To run the server, use the command => node app.js
+// To run the server, use the command => nodemon app.js
 
 const express = require("express");
 const app = express();
